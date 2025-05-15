@@ -8,7 +8,7 @@ if not _G.WaitPerAmount then
     _G.WaitPerAmount = 500 -- Set Higher or Lower depending on your computer's performance
 end
 if _G.SendNotifications == nil then
-    _G.SendNotifications = true -- Set to false if you don't want notifications
+    _G.SendNotifications = false -- Set to false if you don't want notifications
 end
 if _G.ConsoleLogs == nil then
     _G.ConsoleLogs = false -- Set to true if you want console logs (mainly for debugging)
@@ -39,27 +39,27 @@ if not _G.Settings then
         },
         Explosions = {
             Smaller = true,
-            Invisible = false, -- Not recommended for PVP games
-            Destroy = false -- Not recommended for PVP games
+            Invisible = true, -- Not recommended for PVP games
+            Destroy = true -- Not recommended for PVP games
         },
         Particles = {
             Invisible = true,
-            Destroy = false
+            Destroy = true
         },
         TextLabels = {
-            LowerQuality = false,
-            Invisible = false,
-            Destroy = false
+            LowerQuality = true,
+            Invisible = true,
+            Destroy = true
         },
         MeshParts = {
             LowerQuality = true,
-            Invisible = false,
-            NoTexture = false,
-            NoMesh = false,
-            Destroy = false
+            Invisible = true,
+            NoTexture = true,
+            NoMesh = true,
+            Destroy = true
         },
         Other = {
-            ["FPS Cap"] = 240, -- Set this true to uncap FPS
+            ["FPS Cap"] = 60, -- Set this true to uncap FPS
             ["No Camera Effects"] = true,
             ["No Clothes"] = true,
             ["Low Water Graphics"] = true,
